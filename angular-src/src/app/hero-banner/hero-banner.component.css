@@ -1,0 +1,11 @@
+.container-fluid {
+  background: linear-gradient(205Deg, transparent 14%, rgba(38,34,98,.81) 63%), url("../../assets/images/snag-coding-hero.jpg");
+  background-size: cover;
+  background-position:center;
+  padding: 30vh 0px;
+}
+
+.hero-heading-text h1 {
+  color: white;
+  margin: 10px 0px;
+}

@@ -1,0 +1,58 @@
+.applicant-overview {
+  border: 1px solid #ddd;
+  color: #54535D;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.applicant-overview:hover {
+  border-image-source: linear-gradient(to left, #FF9F30, #FF44A0);
+  border-image-slice: 1;
+}
+
+.btn-link {
+  color: #54535D;
+  font-size: 12px;
+  margin: 0px;
+  padding: 0px;
+}
+
+p {
+  margin: 0px;
+  padding: 0px;
+  font-size: 12px;
+}
+
+h4 {
+  margin-bottom: 3px;
+}
+
+.btn-primary {
+  border-radius: 18.5px;
+  background-color: #FF44A0;
+  border-color: #FF44A0;
+  margin-right: 20px;
+}
+
+.btn-primary:hover {
+  background-color: #CC3680;
+  border-color: #CC3680;
+}
+
+.btn-primary:active {
+  background-color: #CC3680 !important;
+  border-color: #CC3680 !important;
+  box-shadow: none;
+}
+
+.btn-primary:focus:active {
+  box-shadow:none !important;
+}
+
+.btn-primary:focus {
+  box-shadow:none;
+}
+
+.applicant-questions {
+  padding-top: 10px;
+}

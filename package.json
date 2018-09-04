@@ -1,0 +1,18 @@
+{
+  "name": "applicant-app",
+  "version": "1.0.0",
+  "description": "Web application for sifting through job applications",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jared Ross",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "mongoose": "^4.13.14"
+  }
+}

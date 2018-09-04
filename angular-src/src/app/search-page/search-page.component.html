@@ -1,0 +1,69 @@
+<app-hero-banner></app-hero-banner>
+<div class="container">
+  <div class="row d-flex justify-content-center searchbox">
+    <div class="col-md-4 col-s-8">
+      <h3 class="text-center">Search Applicants</h3>
+      <input type="text" [(ngModel)]="filtertext" class="form-control" placeholder="John Doe">
+    </div>
+  </div>
+
+
+<mat-expansion-panel
+  *ngFor="let applicant of applicants | myfilter: filtertext">
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      {{applicant.firstName}} {{applicant.secondName}}
+    </mat-panel-title>
+    <mat-panel-description>{{applicant.position}}</mat-panel-description>
+  </mat-expansion-panel-header>
+
+  <div class="row">
+    <div class="col-md-1">
+      <button (click)="onClick(applicant)" class="btn btn-link">
+        <i class="fas fa-star"></i>
+      </button>
+    </div>
+    <div class="col-md-11">
+      <p>Experience: {{applicant.experience}} years</p>
+      <p>Phone Number: {{applicant.phoneNumber}}</p>
+    </div>
+  </div>
+
+  <div class="col-md-12 questions">
+    <h6 class="text-center">Key Questions</h6>
+    <strong>Have you been convicted of a felony?</strong>
+    <p>{{applicant.questions.convictedFelony ? 'Yes' : 'No'}}</p>
+    <strong>Are you authorized to work in the United States?</strong>
+    <p>{{applicant.questions.workAuth ? 'Yes' : 'No'}}</p>
+    <strong>Do you like puppies?</strong>
+    <p>{{applicant.questions.puppyPreference ? 'Yes' : 'No'}}</p>
+  </div>
+
+  <div class="col-md-12 schedule">
+    <h6 class="text-center">Applicant's Upcoming Availability</h6>
+    <table class="table">
+      <thead>
+        <tr class="text-center">
+          <th scope="col">Monday</th>
+          <th scope="col">Tuesday</th>
+          <th scope="col">Wednesday</th>
+          <th scope="col">Thursday</th>
+          <th scope="col">Friday</th>
+          <th scope="col">Saturday</th>
+          <th scope="col">Sunday</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="text-center">
+          <td>{{applicant.availability.monday}}</td>
+          <td>{{applicant.availability.tuesday}}</td>
+          <td>{{applicant.availability.wednesday}}</td>
+          <td>{{applicant.availability.thursday}}</td>
+          <td>{{applicant.availability.friday}}</td>
+          <td>{{applicant.availability.saturday}}</td>
+          <td>{{applicant.availability.sunday}}</td>
+          <tr>
+      </tbody>
+    </table>
+  </div>
+  </mat-expansion-panel>

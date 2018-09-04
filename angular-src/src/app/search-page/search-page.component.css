@@ -1,0 +1,16 @@
+.searchbox {
+  padding: 15px 0px;
+}
+
+.btn-link {
+  padding: 0px 12px;
+  color: darkgray;
+}
+
+.btn-link:hover {
+  color: gold;
+}
+
+.schedule {
+  overflow: scroll;
+}

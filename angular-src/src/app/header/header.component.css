@@ -1,0 +1,25 @@
+.navbar {
+  background: linear-gradient(267deg, #2d2873, #4c2d79);
+  padding: 0px 16px;
+}
+
+.navbar a {
+  color: white;
+}
+
+.navbar-brand {
+  font-size: 30px;
+}
+
+.navbar a:focus {
+  outline: none;
+}
+
+.navbar-toggler {
+  background-color: transparent;
+  border: 1px solid white;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+}

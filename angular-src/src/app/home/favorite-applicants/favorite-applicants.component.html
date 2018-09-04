@@ -1,0 +1,7 @@
+<h3 class="text-center">Your Favorite Applicants</h3>
+<div class="row">
+  <app-favorite-panel 
+    *ngFor="let applicant of applicants"
+    [applicant]="applicant"
+    ngClass="col-md-12"></app-favorite-panel>
+</div>

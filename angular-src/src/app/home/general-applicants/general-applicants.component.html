@@ -1,0 +1,6 @@
+<h3 class="text-center">General Applicants</h3>
+<app-general-panel
+  *ngFor="let applicant of applicants;"
+  [applicant]="applicant"
+  [favorited]="applicant.favorited">
+</app-general-panel>
